@@ -1,0 +1,13 @@
+[build-system]
+requires = ["maturin>=1.7,<2"]
+build-backend = "maturin"
+
+[project]
+name = "smart-cache"
+version = "0.1.0"
+requires-python = ">=3.9"
+description = "Smart cache with eviction, TTL, and distributed storage"
+
+[tool.maturin]
+manifest-path = "crates/smart_cache_py/Cargo.toml"
+module-name = "smart_cache"

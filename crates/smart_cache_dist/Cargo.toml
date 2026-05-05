@@ -1,0 +1,15 @@
+[package]
+name = "smart_cache_dist"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "smart_cache_dist"
+path = "src/lib.rs"
+
+[dependencies]
+axum = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+smart_cache_core = { workspace = true }
+tokio = { workspace = true, features = ["sync"] }

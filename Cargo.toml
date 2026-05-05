@@ -1,0 +1,34 @@
+[package]
+name = "smart-cache-rs"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace]
+members = [
+    ".",
+    "crates/smart_cache_core",
+    "crates/smart_cache_dist",
+    "crates/smart_cache_ffi",
+    "crates/smart_cache_py",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/an-gavrin/Smart-cache-with-eviction-and-distributed-storage"
+
+[workspace.dependencies]
+smart_cache_core = { path = "crates/smart_cache_core" }
+smart_cache_dist = { path = "crates/smart_cache_dist" }
+smart_cache_ffi = { path = "crates/smart_cache_ffi" }
+smart_cache_py = { path = "crates/smart_cache_py" }
+axum = "0.7"
+pyo3 = "0.28"
+serde = "1"
+tokio = "1"
+
+[dependencies]
+smart_cache_core = { workspace = true }
