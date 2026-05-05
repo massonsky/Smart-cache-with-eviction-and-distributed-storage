@@ -1,0 +1,13 @@
+[package]
+name = "smart_cache_ffi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "smart_cache_ffi"
+path = "src/lib.rs"
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+smart_cache_core = { workspace = true }

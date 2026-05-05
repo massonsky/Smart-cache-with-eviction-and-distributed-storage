@@ -1,3 +1,4 @@
-cmake-build-debug
-build
-.idea
+/target
+__pycache__/
+*.py[cod]
+.pytest_cache/

@@ -1,0 +1,11 @@
+[package]
+name = "smart_cache_core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+name = "smart_cache_core"
+path = "src/lib.rs"
+
+[dependencies]
