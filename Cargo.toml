@@ -26,7 +26,7 @@ smart_cache_dist = { path = "crates/smart_cache_dist" }
 smart_cache_ffi = { path = "crates/smart_cache_ffi" }
 smart_cache_py = { path = "crates/smart_cache_py" }
 axum = "0.7"
-pyo3 = "0.28"
+pyo3 = "0.29"
 serde = "1"
 tokio = "1"
 
